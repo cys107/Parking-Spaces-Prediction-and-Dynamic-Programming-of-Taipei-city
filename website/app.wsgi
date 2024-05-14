@@ -2,7 +2,7 @@
 import os,sys
 
 
-sys.path.insert(0, '/var/www/html/website')
+sys.path.insert(0, "${SRVROOT}/htdocs")
 
 from server import app as application
 application.secret_key = "123"
